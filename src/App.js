@@ -1,4 +1,9 @@
 
+
+
+
+
+
 import { useState } from 'react'
 
 
@@ -8,9 +13,11 @@ const App = () => {
   ]) 
   const [newName, setNewName] = useState('')
 
+  
   return (
+    
     <div>
-      <h2>Phonebook</h2>
+      <h1>Phonebook</h1>
       <form>
         <div>
           name: <input />
@@ -18,9 +25,16 @@ const App = () => {
         <div>
           <button type="submit">add</button>
         </div>
+       
+  <div>name: <input /></div>
+  <div>number: <input /></div>
+  <div><button type="submit">add</button></div>
+
       </form>
+
+      
       <h2>Numbers</h2>
-      ...
+      <div>debug: {newName}</div>
     </div>
   )
 }
